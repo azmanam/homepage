@@ -1,0 +1,142 @@
+/*specs of "whole web page" ('container' containing whole page)*/
+div.container
+{
+	/*width of "WWP"*/ 
+		width:99%;
+	/*spacing between edge of screen and beginning of "WWP"*/ 
+		margin:0px 0px 0px 0px;
+	/*specs of border around "WWP"*/
+		border:7px ridge #003366;
+	/*height of line containing text (all text)*/
+		line-height:150%;
+}
+
+.header2
+{
+	/*spacing between inner wall of "container" and text in header and footer*/
+		padding:0.2em;
+		height: 120px;
+	/*color of text in header and footer*/
+		color:black;
+	/*color of background of header and footer*/
+		background-color:#99ccff;
+		border-bottom:7px ridge #003366;
+}
+
+.footer
+{
+	/*spacing between inner wall of "container" and text in header and footer*/
+	/*color of text in header and footer*/
+		color:black;
+	/*color of background of header and footer*/
+		background-color:#99ccff;
+}
+
+h1.header
+{
+	/*spacing between inside of "container" and text in header only*/
+		padding:50px 0px 0px 160px;
+	/*height of header only (can't seem to change width)*/
+		height: 70px;
+		font-family: 'Poor Richard', sans-sarif;
+		background:url(images/rotate.php) no-repeat top right;
+		text-align:left;
+		margin:0px 260px 0px 0px;
+}
+
+
+h1 {line-height: 50%}
+h2 {
+  color: yellow;
+  line-height: 10%
+}
+h3 {line-height: 50%}
+h5 {
+   color: navy;
+   line-height: 5%
+}
+
+table.coll
+{
+	border-collapse: collapse;
+}
+
+.left
+{
+	background-color: #9999CC;
+	border-bottom: solid #003366 2px;
+	margin:0;
+	padding:1em;
+}
+
+.right
+{
+	background-color: #9999CC;
+	border-bottom: solid #003366 2px;
+	margin:0;
+	padding:1em;
+}
+
+.center
+{
+	background-color: #C0C0C0;
+	border-left:thick solid #003366;
+	border-right:thick solid #003366;
+	border-bottom: solid #003366 2px;
+	padding:1em;
+}
+
+ul
+{
+	float:left;
+	width:100%;
+	padding:0;
+	margin:0;
+	list-style-type:none;
+}
+
+a
+{
+		float:left;
+		font-family: Arial, sans-serif;
+	/*width of cell*/
+		width:7.5em;
+		height:2em;
+		margin-bottom: 1em;
+		font-size: xx-small;
+		text-decoration:none;
+		text-align: center;
+		color:black;
+		background-color: #CCCC99;
+		border: inset medium #D3D3D3;
+	/*spacing between cell wall and text*/
+		padding:0em 0em;
+}
+
+a:hover 
+{
+		background-color:#ffff66;
+	/*font-style: italic;*/
+		color:blue;
+		border: outset medium #008000;
+}
+
+li {display:inline}
+
+p {color:#9999cc}
+
+.red
+{
+	color:red;
+	font-family:'Franklin Gothic Demi Cond';
+	font-weight:bolder;
+	background-color:#cccc66
+}
+
+.small
+{
+	width:5em;
+	height:2em;
+	font-size:x-small;
+	text-align:left
+}
