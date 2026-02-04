@@ -192,7 +192,7 @@
               let html = '<div class="weather-current"><span class="weather-icon">' + (icons[curr.weather_code]||'🌡️') + '</span><strong>Cincinnati</strong> <span class="weather-temp">' + Math.round(curr.temperature_2m) + '°F</span> <span class="weather-condition">' + (codes[curr.weather_code]||'') + '</span></div>';
               html += '<div class="weather-forecast">';
               for(let i=0; i<5; i++) {
-                const d = new Date(daily.time[i]);
+                const d = new Date(daily.time[i] + 'T00:00:00');
                 const dayIcon = icons[daily.weather_code[i]] || '🌡️';
                 html += '<span class="forecast-day"><span class="day-name">' + days[d.getDay()] + ' ' + d.getDate() + '</span><span class="day-icon">' + dayIcon + '</span><span class="temps">' + Math.round(daily.temperature_2m_max[i]) + '°/' + Math.round(daily.temperature_2m_min[i]) + '°</span></span>';
               }
